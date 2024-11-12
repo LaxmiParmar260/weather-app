@@ -22,27 +22,11 @@ let fetchWeather = async (e) => {
   h3.innerText = data.location.name;
   image.setAttribute( 'src', data.current.condition.icon);
   p.innerText = data.current.condition.text;
-  
-
-
-
-   
-  // let value =   data.forecast.forecastday[0].day.maxtemp_c
-  // console.log(value);
-
-
-  // if(h2.innerText<=26){
-  //  container.style.backgroundImage = "url(95bd334eb5286ee5bebec0401dd3c9bf.gif)";
-  // }else{
-  //  container.style.backgroundColor = "yellow"
-  // }
       
  } catch (error) {
     window.alert("Invalid City name")
     wetherCard.className = "card p-3 mt-2 shadow-lg d-none"   
  }
-
- 
 
 //for empty input
  form.reset()     
@@ -50,6 +34,4 @@ let fetchWeather = async (e) => {
 
 form.addEventListener("submit", fetchWeather);
 
-
-// script.js
 
