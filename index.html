@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-light">Weather App</span>
+          <span class="navbar-brand mb-0 h1 text-light">1.0</span>
+        </div>
+      </nav>
+      <!--main-container-->
+
+      <div class="container p-5">
+        <h1 class="display-3 text-center mb-3">Search Weather</h1>
+        <div class="card p-3">
+          <form>
+            <input
+              type="text"
+              required
+              placeholder="Search Weather"
+              class="form-control"
+            />
+            <button class="btn btn-success rounded 0 my-3 w-100">Search</button>
+          </form>
+        </div>
+
+        <div id="wetherCard" class="card p-3 mt-2 w 100">
+          <div class="d-flex align-items-center justify-content-between">
+            <span>
+              <h2 class="display-1">26</h2>
+              <h3 class="display-1">Indore</h3>
+            </span>
+            <span class="text-center">
+              <img src="" alt="logo" />
+              <p class="text-secondary">Rainy</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
